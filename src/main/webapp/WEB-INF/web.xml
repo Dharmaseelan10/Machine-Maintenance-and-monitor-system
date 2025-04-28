@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee          http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <servlet-class>com.mycompany.test.vtr.UpdateStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStatusServlet</servlet-name>
+        <url-pattern>/UpdateStatusServlet</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Form.jsp</welcome-file>
+    </welcome-file-list>
+    <security-constraint>
+        <display-name>VISION_ADMIN</display-name>
+        <web-resource-collection>
+            <web-resource-name>SUMMARY</web-resource-name>
+            <description/>
+            <url-pattern>/Summary.jsp</url-pattern>
+        </web-resource-collection>
+        <web-resource-collection>
+            <web-resource-name>ADMIN</web-resource-name>
+            <description>Maintenance page</description>
+            <url-pattern>/Maintenance.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>VISION_ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>file</realm-name>
+        <form-login-config>
+            <form-login-page>/login.jsp</form-login-page>
+            <form-error-page>/login-error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-role>
+        <description/>
+        <role-name>VISION_ADMIN</role-name>
+    </security-role>
+</web-app>

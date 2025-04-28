@@ -1,0 +1,6 @@
+com\mycompany\test\vtr\AddVisionMemberServlet.class
+com\mycompany\test\vtr\UpdateStatusServlet.class
+com\mycompany\test\vtr\EmailUtil.class
+com\mycompany\test\vtr\DeleteVisionMemberServlet.class
+com\mycompany\test\vtr\VisionTeam.class
+com\mycompany\test\vtr\DBConnection.class

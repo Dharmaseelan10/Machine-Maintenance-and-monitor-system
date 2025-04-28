@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/test-vtr">
+    <Resource 
+        auth="Container" 
+        driverClassName="oracle.jdbc.driver.OracleDriver" 
+        logAbandoned="true" 
+        maxActive="20" 
+        maxIdle="10" 
+        maxWait="-1" 
+        minEvictableIdleTimeMillis="30000" 
+        name="jdbc/vtrDB" 
+        password="mb_men" 
+        removeAbandoned="true" 
+        removeAbandonedTimeout="60" 
+        testOnBorrow="true" 
+        testWhileIdle="true" 
+        timeBetweenEvictionRunsMillis="30000" 
+        type="javax.sql.DataSource" 
+        url="jdbc:oracle:thin:@163.50.55.59:1521:MMEPROD" 
+        username="mb_men" 
+        validationQuery="SELECT 1 FROM DUAL"/>
+</Context>
