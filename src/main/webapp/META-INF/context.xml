@@ -9,14 +9,14 @@
         maxWait="-1" 
         minEvictableIdleTimeMillis="30000" 
         name="jdbc/vtrDB" 
-        password="mb_men" 
+        password="yourpassword" 
         removeAbandoned="true" 
         removeAbandonedTimeout="60" 
         testOnBorrow="true" 
         testWhileIdle="true" 
         timeBetweenEvictionRunsMillis="30000" 
         type="javax.sql.DataSource" 
-        url="jdbc:oracle:thin:@163.50.55.59:1521:MMEPROD" 
-        username="mb_men" 
+        url="ur JDBC connection url" 
+        username="your_username" 
         validationQuery="SELECT 1 FROM DUAL"/>
 </Context>
